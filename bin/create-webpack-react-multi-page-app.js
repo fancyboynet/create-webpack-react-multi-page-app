@@ -9,7 +9,7 @@ if (!app) {
   process.exit(1)
 }
 console.log(chalk.green(`Creating a new app '${app}'...`))
-ghdownload('git@github.com:fancyboynet/webpack-vue-multi-page-scaffold.git', app)
+ghdownload('git@github.com:fancyboynet/webpack-react-multi-page-scaffold.git', app)
   .on('error', function(err) {
     console.log(chalk.red(err.message))
     process.exit(1)
