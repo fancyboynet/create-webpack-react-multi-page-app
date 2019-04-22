@@ -16,7 +16,8 @@ ghdownload('git@github.com:fancyboynet/webpack-react-multi-page-scaffold.git', a
   })
   .on('end', function() {
     console.log(chalk.green('Installing packages...'))
-    shelljs.exec(`cd ${app} && npm i`, function (code, stdout, stderr) {
+    const inStallCommand = shell.which('yarn') ? 'yarn' : 'npm i'
+    shelljs.exec(`cd ${app} && ${inStallCommand}`, function (code, stdout, stderr) {
       console.log(chalk.green('Install complete.'))
     })
   })

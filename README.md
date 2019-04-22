@@ -2,5 +2,5 @@
 ```
 npx create-webpack-react-multi-page-app myapp
 cd myapp
-npm start
+yarn run start
 ```
